@@ -7,12 +7,8 @@
     <title>About me</title>
     <style>
         body{
-            background-image: url("Roksana Rundeva.png");
-            background-color: #ffffff;
-            background-position:top;
-            background-repeat:no-repeat;
-            background-size: contain;
-            height: 200vh;
+          padding: 0;
+          margin: 0;
         }
         .button {
   border: black;
@@ -142,6 +138,33 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+@media only screen and (max-width: 576px) {
+  .justify {
+  padding: 0px 0;
+  text-align: justify;
+  /*text-align: center;*/
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    flex: 0 0 auto;
+    width: 100%;
+    line-height: 1.5;
+    column-count: 2;
+  column-gap: 50px;
+  column-width: 300px;
+}
+.topfix{
+  min-height: 150px !important;
+}
+
+
+}
+
+.topfix{
+  min-height: 520px;
+}
+
 .footer {
   padding: 30px;
   text-align: center;
@@ -153,9 +176,10 @@ img {vertical-align: middle;}
 </head>
 
 <body>
-<div style="min-height: 520px;">
-  
-  </div>
+<img src="Roksana Rundeva.png" width="100%"></img>
+
+
+
   <div style="display: flex; justify-content: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <div class="navbar">
         <a class="active" href="index.html">About me</a> 
