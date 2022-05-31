@@ -5,62 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web design</title>
+    <link href='https://fonts.googleapis.com/css?family=Waterfall' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
     <style>
         body{
           padding: 0;
           margin: 0;
         }
-        .button {
-  border: black;
-  color: rgb(0, 0, 0);
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border: 2px solid #000000;
-  background-color: white;
-  margin-left: 120px;
+        
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-inline-start: 230px;
 }
 
-.navbar {
-  width: 60%;
-  background-color: rgb(106, 106, 106);
-  overflow: auto;
-}
-
-.navbar a {
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
-  padding: 8px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%; /* three links of equal widths */
+  color: #000000;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Barlow Condensed';
 }
 
-.navbar a:hover {
-  background-color: #000;
-}
-
-.navbar a.active {
-  background-color: #000000;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+.textheader {
+  font-family: 'Waterfall';
+  font-size: 80px;
+  letter-spacing: 0em;
+  font-weight: 200;
+    font-style: normal;
+    color: #131e37;
 }
 
 div.gallery {
-  border: 1px solid rgb(163, 163, 163);
+  border: 1px solid #00015200;
 }
 
 div.gallery:hover {
@@ -75,6 +56,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  background-color: white;
 }
 
 * {
@@ -106,30 +88,99 @@ div.desc {
   clear: both;
 }
 
+.header {
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
+  letter-spacing: 0em;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+    font-style: normal;
+    color: #000000;
+}
 
+.rectangle {
+  padding: 80px;
+  width: 33%;
+  background: #98aea5;
+  position:absolute;
+  z-index: -1;
+  top: 25%;
+  margin-left: 500px;
+}
+
+hr.new1 {
+  border-top: 1px solid #131e37;
+}
+
+.justifyheader {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Waterfall';
+  color:rgb(255, 255, 255);
+margin-top: 0%;
+}
+
+.rectangletwo {
+  padding: 200px;
+  width: 100%;
+  background: #131e37b7;
+  position:absolute;
+  z-index: -1;
+  top: 90%;
+}
 
 .footer {
-  padding: 50px;
+  padding: 30px;
   text-align: center;
-  color: #ffffff;
-  background: rgb(0, 0, 0);
+  color: #000000;
+  background: #de9a82;
 }
 
 </style>
 </head>
 
 <body>
-  <img src="Roksana Rundeva.png" width="100%"></img>
-  
-    </div>
-    <div style="display: flex; justify-content: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-      <div class="navbar">
-        <a href="index.html">Home</a> 
-        <a href="About me.html">About me</a>
-        <a class="active" href="web design.html">Web design</a> 
-        <a href="3D design.html">3D design</a>
+ 
+  <br>
+
+  <div class="topnav" >
+    <a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a>
+    <a href="About me.html">ABOUT ME  </a> 
+ 
+      <a>
+        <div class="textheader">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roksana Rundeva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
-    </div>
+      </a>
+   
+    <a href="web design.html">WEB DESIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a> 
+    <a href="3D design.html">3D DESIGN</a>
+  </div>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <div class="rectangle"></div>
+<div class="justifyheader">
+  Web design
+</div>
+ 
+  <hr class="new1">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div>
+  <div class="header">
+    My biggest passion has always been doing web design. Although I am just at the beginning of my development as a web designer, I have an acceptable experience in creating web programs and I am continuing to work hard to upgrade my knowledge so that one day I can proclaim myself not only as a successful web designer, but also as a unique one.
+  </div>
+</div>
 
     <br>
     <br>
@@ -137,13 +188,13 @@ div.desc {
     <br>
     <br>
     <br>
-
+<div>
     <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="programme.html">
           <img src="bus.jpg" alt="bus" width="600" height="400">
         </a>
-        <div class="desc">Programme website for booking or buying bus tickets online with possibility to choose your seat.</div>
+        <div class="desc" style="font-family: 'Barlow Condensed';">Program website for booking or buying bus tickets online with possibility to choose your seat.</div>
       </div>
     </div>
 
@@ -152,7 +203,7 @@ div.desc {
         <a target="_blank" href="books.html">
           <img src="books.jpg" alt="books" width="600" height="400">
         </a>
-        <div class="desc">Programme website that shows my top 6 favourite books in young adult genre.</div>
+        <div class="desc" style="font-family: 'Barlow Condensed';">Program website that shows my top 6 favourite books in young adult genre.</div>
       </div>
     </div>
 
@@ -161,11 +212,14 @@ div.desc {
         <a target="_blank" href="animation.html">
           <img src="red animation.jpg" alt="animation" width="600" height="400">
         </a>
-        <div class="desc">Programme website that contains spinning and changing colors animation .</div>
+        <div class="desc" style="font-family: 'Barlow Condensed';">Program website that contains spinning and changing colors animation .</div>
       </div>
     </div>
     
     <div class="clearfix"></div>
+
+    <div class="rectangletwo"></div>
+</div>
 
     <br>
     <br>
@@ -179,8 +233,17 @@ div.desc {
     <br>
     <br>
     <br>
+
+    <div>
+      <p align=center>
+        <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
+        <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
+        <a href="https://www.pinterest.com/roksanarundeva/_saved/"><img src="pinterest.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp;
+        <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" height="30" width="30"></a>
+      </p> 
+      </div>
     
-    <div class="footer" style="font-size: 10px; font-family:Georgia, 'Times New Roman', Times, serif;">
+    <div class="footer" style="font-size: 14px; font-family:'Barlow Condensed'">
       <img src="logo.jpg" alt="logo" width="150px" height="150px">
       <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
     </div>

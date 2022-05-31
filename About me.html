@@ -5,145 +5,304 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
-
+    <link href='https://fonts.googleapis.com/css?family=Waterfall' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
     <style>
         body{
           padding: 0;
           margin: 0;
         }
 
-.button {
-  border: black;
-  color: rgb(0, 0, 0);
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border: 2px solid #000000;
-  background-color: white;
-  margin-left: 120px;
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-inline-start: 230px;
 }
 
-.navbar {
-  width: 60%;
-  background-color: rgb(106, 106, 106);
-  overflow: auto;
-}
-
-.navbar a {
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
-  padding: 8px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 17px;
-  width: 23.2%; /* Four links of equal widths */
+  color: #000000;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Barlow Condensed';
 }
 
-.navbar a:hover {
-  background-color: #000;
+.textheader {
+  font-family: 'Waterfall';
+  font-size: 80px;
+  letter-spacing: 0em;
+  font-weight: 200;
+    font-style: normal;
+    color: #131e37;
 }
 
-.navbar a.active {
-  background-color: #000000;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-@media only screen and (max-width: 576px) {
-  .justify {
-  padding: 0px 0;
+.justify {
+  padding: 70px 0;
   text-align: justify;
-  /*text-align: center;*/
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
     margin-block-start: 2em;
     margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 225px;
+    margin-inline-end: 30px;
     flex: 0 0 auto;
-    width: 100%;
+    width: 70%;
     line-height: 1.5;
     column-count: 2;
-  column-gap: 50px;
-  column-width: 300px;
-}
-.topfix{
-  min-height: 150px !important;
+  column-gap: 100px;
+  column-width: 200px;
 }
 
-
+.justifyheader {
+  text-align: justify;
+  font-size: 25px;
+  font-family: 'Waterfall';
 }
 
-.topfix{
-  min-height: 520px;
+.header {
+  font-family: 'Waterfall';
+  font-size: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+    font-style: normal;
+    color: #000000;
+}
+
+.form {
+  padding: 100px;
+  width: 55%;
+  background: #131e37b7;
+  position:absolute;
+  z-index: -1;
+  top: 225%;
+}
+
+.textform {
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
+  text-align:justify;
+  color: white;
+  margin-left: 20%;
+}
+
+.formtwo {
+  padding: 100px;
+  width: 55%;
+  background: #131e37b7;
+  position:absolute;
+  z-index: -1;
+  top: 255%;
+  margin-left: 45%;
+}
+
+.textformtwo {
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
+  text-align:justify;
+  color: white;
+  margin-left: 50%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.rectangle {
+  padding: 320px;
+  width: 100%;
+  background: #98aea5;
+  position:absolute;
+  z-index: -1;
+  top: 25%;
+}
+
+hr.new1 {
+  border-top: 1px solid #131e37;
 }
 
 .footer {
   padding: 30px;
   text-align: center;
-  color: #ffffff;
-  background: rgb(0, 0, 0);
+  color: #000000;
+  background: #de9a82;
 }
 
-</style>
-
+    </style>
 </head>
+
 <body>
-    <img src="Roksana Rundeva.png" width="100%"></img>
 
+  <br>
 
-
-  <div style="display: flex; justify-content: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div class="navbar">
-        <a href="index.html">Home</a> 
-        <a class="active" href="About me.html">About me</a>
-        <a href="web design.html">Web design</a> 
-        <a href="3D design.html">3D design</a>
-      </div>
+  <div class="topnav" >
+    <a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a>
+    <a href="About me.html">ABOUT ME  </a> 
+ 
+      <a>
+        <div class="textheader">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roksana Rundeva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </a>
+   
+    <a href="web design.html">WEB DESIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a> 
+    <a href="3D design.html">3D DESIGN</a>
   </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+ <div>
+  <div class="justify">
+    <div>
+      <img src="imageme.png"></img>
+    </div>
+<br>
+<br>
+<br>
+    <div class="justifyheader"><h1><b>Who am I?</b></h1></div>
+    <p>Hey there! My name is Roksana Rundeva and I am currently studying Creative Media and Game Technologies at Hanzehogeschool, Groningen. I find myself a passionate web designer, perfectionist, and caring and enthusiastic person that you could rely on. The biggest dream of mine is to become a successful woman and to achieve that I am taking my task very seriously as a student in everyday life. I believe that I can change the world by being my best self!</p>
+    
+  </div>
+  <div class="rectangle"></div>
+ </div>
 
+<div class="justify">
+  <div class="justifyheader"><h1><b>My strengths and experience</b></h1></div>
+    <p>
+      • Driving license category B <br>
+      • Certificate for independent level of proficiency in digital competences under the European Reference Framework for Assessment <br>
+      • Excellent communication and commercial skills <br>
+      <br>
+      • Seller, Ice&Go Company (31.04.2020 - 30.08.2020)<br>
+      • Waitress, Fashion Cafe (01.05.2021 - 15.08.2021)<br>
+      • Worker, Lidl (24.05.2022)
+    </p>
+    
+    <div>
+      <img src="me1.jpg" width="450px" height="450px"></img>
+    </div>
+</div>
 
+<hr class="new1">
+<hr class="new1">
 
-  
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<div class="header">
+  <b>Academic background</b>
+</div>
 
-  <div class="footer" style="font-size: 10px; font-family:Georgia, 'Times New Roman', Times, serif;">
+<div >
+  <div class="textform">
+    <br>
+    <br>
+    <br>
+    <br>
+    <b>HANZE UNIVERSITY OF APPLIED SCIENCES - GRONINGEN, NETHERLANDS</b> <br>
+2021<br>
+<br>
+- Creative media and game technologies
+  </div>
+  <div class="form"></div>
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+  <div class="textformtwo">
+    <b>SPECIALIZED HIGH SCHOOL OF NATURAL SCIENCES AND MATHEMATICS “DOBRI P. CHINTULOV”</b><br>
+2016 - 2021<br>
+<br>
+- Specialty Mathematics with English language and Computer science<br>
+- Member, Volleyball team<br>
+- Class representative on the student council<br>
+  </div>
+<div class="formtwo"></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div>
+  <p align=center>
+    <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.pinterest.com/roksanarundeva/_saved/"><img src="pinterest.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp;
+    <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" height="30" width="30"></a>
+  </p> 
+  </div>
+
+  <div class="footer" style="font-size: 14px; font-family: 'Barlow Condensed'">
     
     <img src="logo.jpg" alt="logo" width="150px" height="150px">
     <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
   </div>
 
 </body>
+
 </html>
