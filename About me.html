@@ -7,101 +7,85 @@
     <title>About me</title>
     <link href='https://fonts.googleapis.com/css?family=Waterfall' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+    <link href="./style.css" rel="stylesheet">
+
     <style>
-        body{
-          padding: 0;
-          margin: 0;
-        }
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    margin-inline-start: 230px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Barlow Condensed';
-}
-
-.textheader {
-  font-family: 'Waterfall';
-  font-size: 80px;
-  letter-spacing: 0em;
-  font-weight: 200;
-    font-style: normal;
-    color: #131e37;
-}
-
+    
 .justify {
   padding: 70px 0;
   text-align: justify;
   font-family: 'Barlow Condensed';
   font-size: 20px;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 225px;
-    margin-inline-end: 30px;
-    flex: 0 0 auto;
-    width: 70%;
-    line-height: 1.5;
-    column-count: 2;
-  column-gap: 100px;
-  column-width: 200px;
+  display: flex;
+  width: 80vw;
+  margin-left: 10vw;
+  align-items: center;
+  justify-content:space-around;
+  height: 60%;
+  margin-top: 15vh;
+  font-size: 1.3vw;
+}
+
+.imageme{
+  width: 30vw;
+  height:30vw;
+}
+
+.colu{
+  width:30vw;
+  line-height: 1.50em;
 }
 
 .justifyheader {
   text-align: justify;
-  font-size: 25px;
+  font-size: 1.7vw!important;
   font-family: 'Waterfall';
 }
 
 .header {
   font-family: 'Waterfall';
-  font-size: 55px;
+  font-size: 4.5vw;
   letter-spacing: 0em;
   text-align: center;
     font-style: normal;
     color: #000000;
 }
+.rectangle{
+  background-color: #98aea5;
+  height: 85vh!important;
+}
 
 .form {
-  padding: 100px;
+  padding: 15vh;
   width: 55%;
   background: #131e37b7;
   position:absolute;
   z-index: -1;
-  top: 225%;
+  top: 20%;
 }
 
 .textform {
   font-family: 'Barlow Condensed';
-  font-size: 20px;
+  font-size: 1.5vw;
   text-align:justify;
   color: white;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .formtwo {
-  padding: 100px;
+  padding: 15vh;
   width: 55%;
   background: #131e37b7;
   position:absolute;
   z-index: -1;
-  top: 255%;
+  top: 70%;
   margin-left: 45%;
+  font-size: 1.5vw!important;
 }
 
 .textformtwo {
   font-family: 'Barlow Condensed';
-  font-size: 20px;
+  font-size: 1.5vw!important;
   text-align:justify;
   color: white;
   margin-left: 50%;
@@ -173,24 +157,8 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
-.rectangle {
-  padding: 320px;
-  width: 100%;
-  background: #98aea5;
-  position:absolute;
-  z-index: -1;
-  top: 25%;
-}
-
 hr.new1 {
   border-top: 1px solid #131e37;
-}
-
-.footer {
-  padding: 30px;
-  text-align: center;
-  color: #000000;
-  background: #de9a82;
 }
 
     </style>
@@ -199,37 +167,38 @@ hr.new1 {
 <body>
 
   <br>
-
+  <div class="center">
   <div class="topnav" >
+    <div>
     <a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a>
     <a href="About me.html">ABOUT ME  </a> 
- 
+  </div>
       <a>
         <div class="textheader">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roksana Rundeva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </a>
-   
+   <div>
     <a href="web design.html">WEB DESIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a> 
     <a href="3D design.html">3D DESIGN</a>
   </div>
-
+  </div>
+  </div>
  <div>
   <div class="justify">
     <div>
-      <img src="imageme.png"></img>
+      <img src="imageme.png" class="imageme"></img>
     </div>
-<br>
-<br>
-<br>
+    <div class="colu">
     <div class="justifyheader"><h1><b>Who am I?</b></h1></div>
     <p>Hey there! My name is Roksana Rundeva and I am currently studying Creative Media and Game Technologies at Hanzehogeschool, Groningen. I find myself a passionate web designer, perfectionist, and caring and enthusiastic person that you could rely on. The biggest dream of mine is to become a successful woman and to achieve that I am taking my task very seriously as a student in everyday life. I believe that I can change the world by being my best self!</p>
-    
+  </div>
   </div>
   <div class="rectangle"></div>
  </div>
 
 <div class="justify">
+  <div class="colu">
   <div class="justifyheader"><h1><b>My strengths and experience</b></h1></div>
     <p>
       • Driving license category B <br>
@@ -240,12 +209,12 @@ hr.new1 {
       • Waitress, Fashion Cafe (01.05.2021 - 15.08.2021)<br>
       • Worker, Lidl (24.05.2022)
     </p>
-    
+  </div>
     <div>
-      <img src="me1.jpg" width="450px" height="450px"></img>
+      <img src="me1.jpg" class="imageme"></img>
     </div>
 </div>
-
+<div style="position: relative;">
 <hr class="new1">
 <hr class="new1">
 
@@ -253,24 +222,19 @@ hr.new1 {
   <b>Academic background</b>
 </div>
 
-<div >
+<div style="padding:3vw;"></div>
   <div class="textform">
-    <br>
-    <br>
-    <br>
-    <br>
     <b>HANZE UNIVERSITY OF APPLIED SCIENCES - GRONINGEN, NETHERLANDS</b> <br>
 2021<br>
 <br>
 - Creative media and game technologies
   </div>
   <div class="form"></div>
-<br>
-<br>
-    <br>
-    <br>
-    <br>
+
+  <div style="padding:5vw;"></div>
   <div class="textformtwo">
+    <br>
+    <br>
     <b>SPECIALIZED HIGH SCHOOL OF NATURAL SCIENCES AND MATHEMATICS “DOBRI P. CHINTULOV”</b><br>
 2016 - 2021<br>
 <br>
@@ -278,6 +242,7 @@ hr.new1 {
 - Member, Volleyball team<br>
 - Class representative on the student council<br>
   </div>
+
 <div class="formtwo"></div>
 </div>
 
@@ -290,19 +255,19 @@ hr.new1 {
 
 <div>
   <p align=center>
-    <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-    <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-    <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp;
-    <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" height="30" width="30"></a>
+    <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" class="icon"></a> &nbsp;&nbsp;&nbsp;
+    <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" class="icon"></a>
   </p> 
   </div>
 
-  <div class="footer" style="font-size: 14px; font-family: 'Barlow Condensed'">
+
+  <div class="footer" style="font-size: 1.2vw; font-family: 'Barlow Condensed'">
     
-    <img src="logo.jpg" alt="logo" width="150px" height="150px">
+    <img src="logo.jpg" alt="logo" style="width:10vw;">
     <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
   </div>
-
 </body>
 
 </html>

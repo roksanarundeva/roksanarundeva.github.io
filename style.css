@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+background-color: rgb(255, 255, 255);
+overflow: hidden;
+display: flex;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #000000;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size:1.5vw;
+font-family: 'Barlow Condensed';
+}
+
+.textheader {
+font-family: 'Waterfall';
+font-size: 6vw;
+letter-spacing: 0em;
+font-weight: 200;
+font-style: normal;
+color: #131e37;
+}
+
+.rectangle {
+width: 100%;
+height: 65vh;
+background: #9095a0;
+position:absolute;
+z-index: -1;
+top: 30%;
+}
+
+.quadrat {
+height:40vh;
+width: 40vh;
+background: #131e37;
+margin-inline-start: 105%;
+text-align: center;
+color: white;
+font-family: 'Waterfall';
+font-size: 4.5vw;
+display: flex;
+align-items: center;
+justify-content: center
+}
+
+.quadrattext {
+width: 60%;
+line-height: 1.5;
+column-count: 3;
+column-gap: 5%;
+column-width: 30%;
+text-align:center;
+}
+
+.qtext {
+font-size: 1.5vw;
+font-family: 'Barlow Condensed';
+color: white;
+text-align: center;
+}
+
+.textbody {
+font-size: 2vw;
+font-family: 'Barlow Condensed';
+color: white;
+text-align: center;
+}
+
+.quote {
+font-size:3vw;
+font-family: 'Barlow Condensed';
+text-align: center;
+letter-spacing: 0.5em;
+}
+
+
+
+.footer {
+padding: 30px;
+text-align: center;
+color: #000000;
+background: #de9a82;
+}
+
+@media only screen and (max-width: 476px) {
+.center{
+flex-direction: column;
+}
+
+.topnav{
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+*{
+font-size:20px!important;
+}
+
+.textheader{
+font-size:50px;
+}
+
+.quadrat{
+width: 30vw;
+height: 30vw;
+margin-inline-start: 0;;
+}
+
+.quadrattext{
+width: 100%;
+}
+
+.icon{
+width:8vw!important;
+}
+}
+
+.icon{
+width:2vw;
+}

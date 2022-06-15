@@ -7,33 +7,13 @@
     <title>Web design</title>
     <link href='https://fonts.googleapis.com/css?family=Waterfall' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+    <link href="./style.css" rel="stylesheet">
     <style>
-        body{
-          padding: 0;
-          margin: 0;
-        }
-        
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    margin-inline-start: 230px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Barlow Condensed';
-}
+       
 
 .textheader {
   font-family: 'Waterfall';
-  font-size: 80px;
+  font-size: 6vw;
   letter-spacing: 0em;
   font-weight: 200;
     font-style: normal;
@@ -57,6 +37,7 @@ div.desc {
   padding: 15px;
   text-align: center;
   background-color: white;
+  font-size: 1vw;
 }
 
 * {
@@ -90,10 +71,11 @@ div.desc {
 
 .header {
   font-family: 'Barlow Condensed';
-  font-size: 20px;
+  font-size:1.5vw;
   letter-spacing: 0em;
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
   text-align: center;
     font-style: normal;
     color: #000000;
@@ -102,11 +84,12 @@ div.desc {
 .rectangle {
   padding: 80px;
   width: 33%;
+  height: 25vh;
   background: #98aea5;
   position:absolute;
   z-index: -1;
-  top: 25%;
-  margin-left: 500px;
+  top: 0;
+  margin-left: 33%;
 }
 
 hr.new1 {
@@ -115,7 +98,7 @@ hr.new1 {
 
 .justifyheader {
   text-align: center;
-  font-size: 70px;
+  font-size: 6vw;
   font-family: 'Waterfall';
   color:rgb(255, 255, 255);
 margin-top: 0%;
@@ -130,51 +113,42 @@ margin-top: 0%;
   top: 90%;
 }
 
-.footer {
-  padding: 30px;
-  text-align: center;
-  color: #000000;
-  background: #de9a82;
-}
-
 </style>
 </head>
 
 <body>
  
   <br>
-
+<div class="center">
   <div class="topnav" >
+    <div>
     <a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a>
     <a href="About me.html">ABOUT ME  </a> 
- 
+  </div>
       <a>
         <div class="textheader">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roksana Rundeva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </a>
-   
+   <div>
     <a href="web design.html">WEB DESIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a> 
     <a href="3D design.html">3D DESIGN</a>
   </div>
-    
-
+</div>
+</div>
     <br>
     <br>
     <br>
     <br>
-
+<div style="position: relative;">
   <div class="rectangle"></div>
 <div class="justifyheader">
   Web design
 </div>
  
   <hr class="new1">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+</div>
+
 
 <div>
   <div class="header">
@@ -236,17 +210,18 @@ margin-top: 0%;
 
     <div>
       <p align=center>
-        <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-        <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-        <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp;
-        <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" height="30" width="30"></a>
+        <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+        <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+        <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" class="icon"></a> &nbsp;&nbsp;&nbsp;
+        <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" class="icon"></a>
       </p> 
       </div>
     
-    <div class="footer" style="font-size: 14px; font-family:'Barlow Condensed'">
-      <img src="logo.jpg" alt="logo" width="150px" height="150px">
-      <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
-    </div>
-  
+    
+      <div class="footer" style="font-size: 1.2vw; font-family: 'Barlow Condensed'">
+        
+        <img src="logo.jpg" alt="logo" style="width:10vw;">
+        <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
+      </div>
 </body>
 </html>

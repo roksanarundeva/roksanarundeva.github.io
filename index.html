@@ -1,132 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href='https://fonts.googleapis.com/css?family=Waterfall' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
-    <style>
-        body{
-          padding: 0;
-          margin: 0;
-        }
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    margin-inline-start: 230px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Barlow Condensed';
-}
-
-.textheader {
-  font-family: 'Waterfall';
-  font-size: 80px;
-  letter-spacing: 0em;
-  font-weight: 200;
-    font-style: normal;
-    color: #131e37;
-}
-
-.imagefix {
-  margin-inline-start: 10%;
-  
-}
-
-.rectangle {
-  padding: 250px;
-  width: 67%;
-  background: #9095a0;
-  position:absolute;
-  z-index: -1;
-  top: 30%;
-}
-
-.quadrat {
-  height: 300px;
-  width: 300px;
-  background: #131e37;
-  margin-inline-start: 105%;
-  text-align: center;
-  color: white;
-  font-family: 'Waterfall';
-  font-size: 60px;
-}
-
-.quadrattext {
-  width: 60%;
-  line-height: 1.5;
-  column-count: 3;
-  column-gap: 5%;
-  column-width: 30%;
-  text-align:center;
-}
-
-.qtext {
-  font-size: 20px;
-  font-family: 'Barlow Condensed';
-  color: white;
-  text-align: center;
-}
-
-.textbody {
-  font-size: 30px;
-  font-family: 'Barlow Condensed';
-  color: white;
-  text-align: center;
-}
-
-.quote {
-  font-size: 40px;
-  font-family: 'Barlow Condensed';
-  text-align: center;
-  letter-spacing: 0.5em;
-}
-
-
-
-.footer {
-  padding: 30px;
-  text-align: center;
-  color: #000000;
-  background: #de9a82;
-}
-
-    </style>
+    <link href="./style.css" rel="stylesheet">
 </head>
 
 <body>
 
 <br>
 
+<div class="center">
   <div class="topnav" >
+    <div>
     <a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a>
     <a href="About me.html">ABOUT ME  </a> 
- 
+  </div>
       <a>
         <div class="textheader">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roksana Rundeva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </a>
-   
+   <div>
     <a href="web design.html">WEB DESIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a> 
     <a href="3D design.html">3D DESIGN</a>
   </div>
-  
+  </div>
+</div>
 <div>
-  <div class="imagefix"> <img src="Roksana Rundeva2.png" width="90%"></img> </div>
+  <div class="center">
+ <img src="Roksana Rundeva2.png" width="90%"></img> 
+</div>
   <div class="rectangle"></div>
 </div>
 
@@ -141,13 +48,13 @@
 
 <div class="quadrattext">
   
-  <div class="quadrat"><a href="About me.html" style="color: white; text-decoration:none"><br>About me <div class="qtext">LEARN MORE</div></a></div>
+  <div class="quadrat"><a href="About me.html" style="color: white; text-decoration:none">About me <div class="qtext">LEARN MORE</div></a></div>
   
   
-  <div class="quadrat"><a href="web design.html" style="color: white; text-decoration:none"><br>Web design <div class="qtext">LEARN MORE</div></a></div>
+  <div class="quadrat"><a href="web design.html" style="color: white; text-decoration:none">Web design <div class="qtext">LEARN MORE</div></a></div>
   
   
-  <div class="quadrat"><a href="3D design.html" style="color: white; text-decoration:none"><br>3D design <div class="qtext">LEARN MORE</div></a></div>
+  <div class="quadrat"><a href="3D design.html" style="color: white; text-decoration:none">3D design <div class="qtext">LEARN MORE</div></a></div>
   
 </div>
 
@@ -166,17 +73,17 @@
 
   <div>
   <p align=center>
-    <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-    <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-    <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp;
-    <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" height="30" width="30"></a>
+    <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" class="icon"></a> &nbsp;&nbsp;&nbsp;
+    <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" class="icon"></a>
   </p> 
   </div>
 
 
-  <div class="footer" style="font-size: 14px; font-family: 'Barlow Condensed'">
+  <div class="footer" style="font-size: 1.2vw; font-family: 'Barlow Condensed'">
     
-    <img src="logo.jpg" alt="logo" width="150px" height="150px">
+    <img src="logo.jpg" alt="logo" style="width:10vw;">
     <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
   </div>
 

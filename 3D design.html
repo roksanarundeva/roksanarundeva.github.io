@@ -7,39 +7,9 @@
     <title>3D design</title>
     <link href='https://fonts.googleapis.com/css?family=Waterfall' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+
+    <link href="./style.css" rel="stylesheet">
     <style>
-        body{
-          padding: 0;
-          margin: 0;
-        }
-        
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    margin-inline-start: 230px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Barlow Condensed';
-}
-
-.textheader {
-  font-family: 'Waterfall';
-  font-size: 80px;
-  letter-spacing: 0em;
-  font-weight: 200;
-    font-style: normal;
-    color: #131e37;
-}
-
 .container {
   position: relative;
   width: 50%;
@@ -52,8 +22,8 @@
   bottom: 0em;
   left: 50px;
   right: 0;
-  width: 400px;
-  height: 400px;
+  height: 25vw;
+  width: 25vw;
 }
 
 .overlay {
@@ -62,8 +32,8 @@
   bottom: 0em;
   left: 50px;
   right: 0;
-  height: 400px;
-  width: 400px;
+  height: 25vw;
+  width: 25vw;
   opacity: 0;
   transition: .5s ease;
   background-color: #000000;
@@ -77,7 +47,7 @@
 .text {
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
+  font-size: 1.1vw;
   text-align: justify;
   position: absolute;
   top: 50%;
@@ -141,49 +111,46 @@
 }
 
 .rectangle {
-  padding: 310px;
-  width: 40%;
+  margin-top: 10%;
+  width: 80%;
+  margin-left: 10%;
+  height:80%;
   background: #98aea5;
   position:absolute;
   z-index: -1;
-  top: 95%;
-  margin-left: 150px;
+  top: 0;
 }
 
+hr.new1 {
+  border-top: 1px solid #131e37;
+}
 .header {
   font-family: 'Barlow Condensed';
-  font-size: 20px;
+  font-size:1.5vw;
   letter-spacing: 0em;
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
   text-align: center;
     font-style: normal;
     color: #000000;
 }
-
 .justifyheader {
   text-align: center;
-  font-size: 70px;
+  font-size: 6vw;
   font-family: 'Waterfall';
   color:rgb(255, 255, 255);
 margin-top: 0%;
 }
 
 .rectangleone {
-  padding: 80px;
-  width: 22.5%;
+  width: 33%;
+  height: 25vh;
   background: #131e37b7;
   position:absolute;
   z-index: -1;
-  top: 25%;
-  margin-left: 500px;
-}
-
-.footer {
-  padding: 30px;
-  text-align: center;
-  color: #000000;
-  background: #de9a82;
+  top: 0;
+  margin-left: 33%;
 }
 
 </style>
@@ -193,47 +160,46 @@ margin-top: 0%;
 
   <br>
 
-  <div class="topnav" >
-    <a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a>
-    <a href="About me.html">ABOUT ME  </a> 
- 
-      <a>
-        <div class="textheader">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roksana Rundeva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
-      </a>
-   
-    <a href="web design.html">WEB DESIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a> 
-    <a href="3D design.html">3D DESIGN</a>
+  <div class="center">
+    <div class="topnav" >
+      <div>
+      <a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a>
+      <a href="About me.html">ABOUT ME  </a> 
+    </div>
+        <a>
+          <div class="textheader">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roksana Rundeva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </a>
+     <div>
+      <a href="web design.html">WEB DESIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |</a> 
+      <a href="3D design.html">3D DESIGN</a>
+    </div>
   </div>
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-<div class="rectangleone"></div>
-<div class="justifyheader">
-3D design
-</div>
-
-<hr class="new1">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
+  </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  <div style="position: relative;">
+    <div class="rectangleone"></div>
+  <div class="justifyheader">
+    3D design
+  </div>
+   
+    <hr class="new1">
+  </div>
+  
+  
   <div>
     <div class="header">
       In addition to creating websites, I strive to gain knowledge in making 3D objects. Although I am not an expert in working with 3D models, I try to learn, because it is always necessary to know the basics of a knowledge in order to be able to take a rational attitude in a situation.
     </div>
   </div>
-
-    <br>
-    <br>
-    <br>
+</div>
+  <div style="position: relative;">
  <div>  
+ 
     <div class="row">
       <div class="column">
         <div class="container">
@@ -298,10 +264,12 @@ margin-top: 0%;
       </div>
 
     </div>
-    
+     <div class="rectangle"></div>
     </div>
-    <div class="rectangle"></div>
+   
+   
   </div>
+</div>
     
     
 <br>
@@ -315,19 +283,18 @@ margin-top: 0%;
 
 <div>
   <p align=center>
-    <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-    <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp; 
-    <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" height="30" width="30"></a> &nbsp;&nbsp;&nbsp;
-    <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" height="30" width="30"></a>
+    <a href="https://www.instagram.com/roksanarundeva/"><img src="instagram.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.facebook.com/profile.php?id=100009808367558"><img src="facebook.png" class="icon"></a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://www.linkedin.com/in/roksana-rundeva-739576241/"><img src="linkedin.png" class="icon"></a> &nbsp;&nbsp;&nbsp;
+    <a href="mailto:roksanarundeva@gmail.com"><img src="email.png" class="icon"></a>
   </p> 
   </div>
 
-    <div class="footer" style="font-size: 14px; font-family:'Barlow Condensed'">
-    
-      <img src="logo.jpg" alt="logo" width="150px" height="150px">
-      <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
-    </div>
-  
 
+  <div class="footer" style="font-size: 1.2vw; font-family: 'Barlow Condensed'">
+    
+    <img src="logo.jpg" alt="logo" style="width:10vw;">
+    <p>© 2022 Roksana Rundeva. All Rights Reserved.</p>
+  </div>
 </body>
 </html>
